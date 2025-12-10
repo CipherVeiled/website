@@ -587,10 +587,14 @@ section {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
+        opacity: 0;
+        visibility: hidden;
     }
     
     .nav-menu.active {
         max-height: 400px;
+        opacity: 1;
+        visibility: visible;
     }
     
     .nav-menu li {
