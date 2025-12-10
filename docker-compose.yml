@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  cipherveiled-web:
+    image: ghcr.io/cipherveiled/website:latest
+    container_name: cipherveiled-web
+    restart: unless-stopped
+    ports:
+      - "8081:80"
+    networks:
+      - web
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+
+  watchtower:
+    image: containrrr/watchtower:latest
+    container_name: watchtower-cipherveiled
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --interval 300 --cleanup --label-enable
+    networks:
+      - web
+
+networks:
+  web:
+    external: false

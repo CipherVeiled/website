@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CipherVeiled - Privacy-focused cryptocurrency. Where Every Transaction is a Whisper.">
+    <title>CipherVeiled [CV] - Privacy-Focused Cryptocurrency</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Faulty Terminal Background -->
+    <canvas id="terminal-canvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="img/logo.png" alt="CipherVeiled Logo" class="nav-logo">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#specs">Specs</a></li>
+                <li><a href="#download">Download</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="img/logo.png" alt="CipherVeiled" class="hero-logo">
+                <h1 class="glitch" data-text="CipherVeiled">CipherVeiled</h1>
+                <p class="tagline">Where Every Transaction is a Whisper</p>
+                <p class="subtitle">Privacy-Focused CryptoNightLite V1 Cryptocurrency</p>
+                <div class="cta-buttons">
+                    <a href="#download" class="btn btn-primary">Download Wallet</a>
+                    <a href="https://github.com/cipherveiled/cipherveiled" class="btn btn-secondary" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About CipherVeiled</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">🔒</div>
+                    <h3>Privacy First</h3>
+                    <p>Built on CryptoNightLite V1 with phased ring signature enforcement to ensure your transactions remain private and untraceable.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Fast Transactions</h3>
+                    <p>45-second block time ensures quick confirmations while maintaining network security and decentralization.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">💎</div>
+                    <h3>Limited Supply</h3>
+                    <p>Only 21 million CV will ever exist, mirroring Bitcoin's scarcity model with enhanced privacy features.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-number">01</div>
+                    <h3>Phased Privacy Enforcement</h3>
+                    <p><strong>Bootstrap Phase (0-999):</strong> Optional privacy during initial chain growth</p>
+                    <p><strong>Light Enforcement (1000-9999):</strong> Minimum 1 decoy required</p>
+                    <p><strong>Full Privacy (10000+):</strong> Mandatory 4-ring signatures for all transactions</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">02</div>
+                    <h3>RandomX Algorithm</h3>
+                    <p>ASIC-resistant proof-of-work algorithm designed for CPU mining, promoting decentralization and fair distribution.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">03</div>
+                    <h3>Low Transaction Fees</h3>
+                    <p>Minimum fee of just 0.01 CV ensures affordable transactions while preventing spam attacks on the network.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">04</div>
+                    <h3>Modern Codebase</h3>
+                    <p>Built with C++23, leveraging the latest language features for performance, security, and maintainability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section id="specs" class="specs">
+        <div class="container">
+            <h2 class="section-title">Technical Specifications</h2>
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <div class="spec-label">Algorithm</div>
+                    <div class="spec-value">RandomX</div>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-label">Ticker</div>
+                    <div class="spec-value">CIPH</div>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-label">Max Supply</div>
+                    <div class="spec-value">21,000,000</div>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-label">Block Time</div>
+                    <div class="spec-value">45 seconds</div>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-label">Decimals</div>
+                    <div class="spec-value">2</div>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-label">Minimum Fee</div>
+                    <div class="spec-value">0.01 CV</div>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-label">P2P Port</div>
+                    <div class="spec-value">13001</div>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-label">RPC Port</div>
+                    <div class="spec-value">13002</div>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-label">Emission Speed</div>
+                    <div class="spec-value">Factor 17</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <h2 class="section-title">Get Started</h2>
+            <div class="download-content">
+                <p class="download-subtitle">Download the latest release for your platform</p>
+                <div class="platform-buttons">
+                    <a href="https://github.com/cipherveiled/cipherveiled/releases" class="platform-btn" target="_blank">
+                        <span class="platform-icon">🐧</span>
+                        <span class="platform-name">Linux</span>
+                    </a>
+                    <a href="https://github.com/cipherveiled/cipherveiled/releases" class="platform-btn" target="_blank">
+                        <span class="platform-icon">🪟</span>
+                        <span class="platform-name">Windows</span>
+                    </a>
+                    <a href="https://github.com/cipherveiled/cipherveiled/releases" class="platform-btn" target="_blank">
+                        <span class="platform-icon">🍎</span>
+                        <span class="platform-name">macOS</span>
+                    </a>
+                </div>
+                <div class="compile-section">
+                    <h3>Compile from Source</h3>
+                    <p>For advanced users, compile the latest version from our GitHub repository:</p>
+                    <div class="code-block">
+                        <code>git clone https://github.com/cipherveiled/cipherveiled<br>
+cd cipherveiled<br>
+mkdir build && cd build<br>
+cmake ..<br>
+make</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CipherVeiled</h4>
+                    <p>Privacy-focused cryptocurrency</p>
+                    <p class="tagline-small">Where Every Transaction is a Whisper</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com/cipherveiled/cipherveiled" target="_blank">GitHub</a></li>
+                        <li><a href="https://cipherveiled.org" target="_blank">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Network</h4>
+                    <ul>
+                        <li>P2P Port: 13001</li>
+                        <li>RPC Port: 13002</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CipherVeiled Developers. Open Source under included LICENSE.</p>
+                <p class="genesis-quote">"The Times 10/Dec/2025 Privacy is not a crime"</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
